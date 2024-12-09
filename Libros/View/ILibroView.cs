@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Libros.View
 {
-    internal interface ILibroview
+    public interface ILibroView
     {
     }
 }
