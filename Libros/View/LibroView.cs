@@ -12,58 +12,64 @@ namespace Libros.View
 {
     public partial class LibroView : Form, ILibroView
     {
+        private string mensaje;
+        private bool esCorrecto;
+        private bool isEditar;
+
         public LibroView()
         {
             InitializeComponent();
         }
 
+        //Propiedades
         public string LibroId
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get { return txtIdLibro.Text; }
+            set { txtIdLibro.Text = value; }
         }
 
         public string Titulo
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get { return txtTitulo.Text; }
+            set { txtTitulo.Text = value; }
         }
         public string Autor 
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get { return txtAutor.Text; }
+            set { txtAutor.Text = value; }
         }
 
         public string Genero
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get { return txtGenero.Text; }
+            set { txtGenero.Text = value; }
         }
 
         public string BuscarPorValor
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get { return txtBuscar.Text; }
+            set { txtBuscar.Text = value; }
         }
 
         public bool IsEditar 
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get { return isEditar; }
+            set { isEditar = value; }
         }
 
         public bool IsCorrecto
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get { return esCorrecto; }
+            set { esCorrecto = value; }
         }
 
         public string Mensaje
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get { return mensaje; }
+            set { mensaje = value; }
         }
 
+        //Eventos
         public event EventHandler BuscarEvento;
         public event EventHandler Agregarevento;
         public event EventHandler EditarEvento;
@@ -71,9 +77,11 @@ namespace Libros.View
         public event EventHandler GuardarEvento;
         public event EventHandler CancelarEvento;
 
+        //Métodos
         public void SetListaLibrosBindingSource(BindingSource listaLibros)
         {
-            throw new NotImplementedException();
+            dgvLibros.DataSource = listaLibros;
         }
+        
     }
 }
