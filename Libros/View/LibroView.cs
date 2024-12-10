@@ -19,6 +19,16 @@ namespace Libros.View
         public LibroView()
         {
             InitializeComponent();
+            AssociateAndRaiseViewEvents();
+        }
+
+        private void AssociateAndRaiseViewEvents()
+        {
+            btnBuscar.Click += delegate { EventBuscar?.Invoke(this, EventArgs.Empty);};
+            txtBuscar.KeyDown += (s, e) =>
+            {
+                if (e.KeyCode == Keys.Enter) { EventBuscar?.Invoke(this, EventArgs.Empty); }
+            };
         }
 
         //Propiedades
@@ -70,6 +80,12 @@ namespace Libros.View
         }
 
         //Eventos
+        public event EventHandler EventBuscar;
+        public event EventHandler EventAgregar;
+        public event EventHandler EventEditar;
+        public event EventHandler EventBorrar;
+        public event EventHandler EventGuardar;
+        public event EventHandler EventCancelar;
         public event EventHandler BuscarEvento;
         public event EventHandler Agregarevento;
         public event EventHandler EditarEvento;
