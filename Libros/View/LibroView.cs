@@ -108,11 +108,12 @@ namespace Libros.View
         }
 
         private static LibroView instancia;
-        public static LibroView ObtenerInstancia()
+        public static LibroView ObtenerInstancia(Form parentContainer)
         {
             if (instancia == null || instancia.IsDisposed)
             {
                 instancia = new LibroView();
+                instancia.MdiParent = parentContainer;
             }
             else
             {
