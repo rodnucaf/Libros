@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Libros.Model;
 using Libros.View;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace Libros.Presenter
 {
@@ -29,6 +31,7 @@ namespace Libros.Presenter
             this.view.BorrarEvento += BorrarLibroSeleccionado;
             this.view.GuardarEvento += GuardarLibroSeleccionado;
             this.view.CancelarEvento += CancelarAccion;
+            
             //Libros Binding Source
             this.view.SetListaLibrosBindingSource(libroBindingSource);
             //Cargar lista
@@ -69,7 +72,23 @@ namespace Libros.Presenter
 
         private void GuardarLibroSeleccionado(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var modelo = new Libro();
+            modelo.Id = Convert.ToInt32(view.LibroId);
+            modelo.Titulo = view.Titulo;
+            modelo.Autor = view.Autor;
+            modelo.Genero = view.Genero;
+
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+                view.IsCorrecto = false;
+                view.Mensaje = ex.Message;
+            }
+
         }
 
         private void BorrarLibroSeleccionado(object sender, EventArgs e)
@@ -79,12 +98,17 @@ namespace Libros.Presenter
 
         private void AgregarlibroSeleccionadoEditar(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var libro = (Libro)libroBindingSource.Current;
+            view.LibroId = libro.Id.ToString();
+            view.Titulo = libro.Titulo;
+            view.Autor = libro.Autor;
+            view.Genero = libro.Genero;
+            view.IsEditar = true;
         }
 
         private void AgregarLibro(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            view.IsEditar = false;
         }
 
         
