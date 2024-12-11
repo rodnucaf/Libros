@@ -115,7 +115,20 @@ namespace Libros.Presenter
 
         private void BorrarLibroSeleccionado(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var libro = (Libro)libroBindingSource.Current;
+                repository.Delete(libro.Id);
+                view.IsCorrecto = true;
+                view.Mensaje = "Registro eliminaro correctamente.";
+                CargarListaLibros();
+            }
+            catch (Exception ex)
+            {
+                view.IsCorrecto = false;
+                view.Mensaje = "Ocurrió un error, intente nuevamente";
+                
+            }
         }
 
         private void AgregarlibroSeleccionadoEditar(object sender, EventArgs e)
