@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+
+
 using Libros.Model;
 
 namespace Libros.Repositories
@@ -23,7 +25,18 @@ namespace Libros.Repositories
         //Métodos
         public void Add(Libro libro)
         {
-            throw new NotImplementedException();
+            var listaLibros = new List<Libro>();
+            using (var conexion = new SqlConnection(connectionString))
+            using (var comando = new SqlCommand())
+            {
+                conexion.Open();
+                comando.Connection = conexion;
+                comando.CommandText = "Insert into Libros values(@Titulo, @Autor, @Genero)";
+                comando.Parameters.Add("@Titulo", SqlDbType.NVarChar).Value = libro.Titulo;
+                comando.Parameters.Add("@Autor", SqlDbType.NVarChar).Value = libro.Autor;
+                comando.Parameters.Add("@Genero", SqlDbType.NVarChar).Value = libro.Genero;
+                comando.ExecuteNonQuery();
+            }
         }
 
         public void Delete(int id)
@@ -46,7 +59,7 @@ namespace Libros.Repositories
             {
                 conexion.Open();
                 comando.Connection = conexion;
-                comando.CommandText = "Select * FROM Libro where Libro_Id=@id or Titulo like @titulo+'%' order by Libro_Id desc";
+                comando.CommandText = "Select * from Libro where Libro_Id=@id or Titulo like @titulo+'%' order by Libro_Id desc";
                 comando.Parameters.Add("@id", SqlDbType.Int).Value = id;
                 comando.Parameters.Add("@titulo", SqlDbType.NVarChar).Value = titulo;
                 using (var lector = comando.ExecuteReader())
