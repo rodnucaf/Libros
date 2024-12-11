@@ -10,7 +10,23 @@ namespace Libros.Presenter.Common
 {
     public class ValidacionesModelo
     {
+        public void Validar(object modelo)
+        {
+            string mensajeError = "";
+            List<ValidationResult> resultados = new List<ValidationResult>();
+            ValidationContext contexto = new ValidationContext(modelo);
 
+            bool esValido = Validator.TryValidateObject(modelo, contexto, resultados);
+
+            if (esValido==false)
+            {
+                foreach (var item in resultados)
+                {
+                    mensajeError+= "- " + item.ErrorMessage + "\n";
+                    throw new Exception(mensajeError);
+                }
+            }
+        }
 
     }
 }
