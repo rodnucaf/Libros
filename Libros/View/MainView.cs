@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Libros.View
 {
-    public partial class MainView : Form
+    public partial class MainView : Form, IMainView
     {
         public MainView()
         {
             InitializeComponent();
+            btnLibros.Click += delegate { ShowLibroView?.Invoke(this, EventArgs.Empty); };
         }
+
+        public event EventHandler ShowLibroView;
+        public event EventHandler ShowOwnerView;
+        public event EventHandler ShowUserView;
     }
 }
