@@ -25,8 +25,9 @@ namespace Libros
             string sqlConnectionString = ConfigurationManager.ConnectionStrings["SqlConnection"].ConnectionString;
             ILibroView view = new LibroView();
             ILibroRepository libroRepository = new LibroRepository(sqlConnectionString);
+            new LibroPresenter(view, libroRepository);
 
-            Application.Run(new Form1());
+            Application.Run((Form)view);
         }
     }
 }
