@@ -80,7 +80,20 @@ namespace Libros.Presenter
 
             try
             {
-
+                new Common.ValidacionesModelo().Validar(modelo);
+                if (view.IsEditar)
+                {
+                    repository.Edit(modelo);
+                    view.Mensaje = "Registro editado correctamente.";
+                }
+                else
+                {
+                    repository.Add(modelo);
+                    view.Mensaje = "Registro agregado correctamente.";
+                }
+                view.IsCorrecto = true;
+                CargarListaLibros();
+                LimpiarCampos();
             }
             catch (Exception ex)
             {
@@ -89,6 +102,15 @@ namespace Libros.Presenter
                 view.Mensaje = ex.Message;
             }
 
+        }
+
+        private void LimpiarCampos()
+        {
+            view.LibroId = "0";
+            view.Titulo = "";
+            view.Autor = "";
+            view.Genero = "";
+            
         }
 
         private void BorrarLibroSeleccionado(object sender, EventArgs e)
