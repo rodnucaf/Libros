@@ -22,6 +22,7 @@ namespace Libros.View
             InitializeComponent();
             AssociateAndRaiseViewEvents();
             tabControl.TabPages.Remove(tpDetalle);
+            btnCerrar.Click += delegate { this.Close(); };
         }
 
         private void AssociateAndRaiseViewEvents()
@@ -114,6 +115,8 @@ namespace Libros.View
             {
                 instancia = new LibroView();
                 instancia.MdiParent = parentContainer;
+                instancia.FormBorderStyle = FormBorderStyle.None;
+                instancia.Dock = DockStyle.Fill;
             }
             else
             {
