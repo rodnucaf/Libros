@@ -41,7 +41,17 @@ namespace Libros.Repositories
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var listaLibros = new List<Libro>();
+            using (var conexion = new SqlConnection(connectionString))
+            using (var comando = new SqlCommand())
+            {
+                conexion.Open();
+                comando.Connection = conexion;
+                comando.CommandText = "delete from Libros where Libro_Id=@id)";
+                comando.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                
+                comando.ExecuteNonQuery();
+            }
         }
 
         public void Edit(Libro libro)
