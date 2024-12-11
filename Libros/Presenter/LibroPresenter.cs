@@ -67,7 +67,7 @@ namespace Libros.Presenter
 
         private void CancelarAccion(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            LimpiarCampos();
         }
 
         private void GuardarLibroSeleccionado(object sender, EventArgs e)
