@@ -26,7 +26,7 @@ namespace Libros.Presenter
 
         private void ShowLibrosView(object sender, EventArgs e)
         {
-            ILibroView view = new LibroView();
+            ILibroView view = LibroView.ObtenerInstancia();
             ILibroRepository libroRepository = new LibroRepository(sqlConnectionString);
             new LibroPresenter(view, libroRepository);
         }
