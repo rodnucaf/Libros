@@ -106,6 +106,22 @@ namespace Libros.View
         {
             dgvLibros.DataSource = listaLibros;
         }
-        
+
+        private static LibroView instancia;
+        public static LibroView ObtenerInstancia()
+        {
+            if (instancia == null || instancia.IsDisposed)
+            {
+                instancia = new LibroView();
+            }
+            else
+            {
+                if (instancia.WindowState==FormWindowState.Minimized)
+                { instancia.WindowState = FormWindowState.Maximized; }
+                instancia.BringToFront();
+            }
+            return instancia;
+        }
+
     }
 }
