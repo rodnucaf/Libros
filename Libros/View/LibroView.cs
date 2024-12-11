@@ -15,11 +15,13 @@ namespace Libros.View
         private string mensaje;
         private bool esCorrecto;
         private bool isEditar;
+        
 
         public LibroView()
         {
             InitializeComponent();
             AssociateAndRaiseViewEvents();
+            tabControl.TabPages.Remove(tpDetalle);
         }
 
         private void AssociateAndRaiseViewEvents()
@@ -28,6 +30,12 @@ namespace Libros.View
             txtBuscar.KeyDown += (s, e) =>
             {
                 if (e.KeyCode == Keys.Enter) { EventBuscar?.Invoke(this, EventArgs.Empty); }
+            };
+
+            txtBuscar.TextChanged += (s, e) =>
+            {
+                
+                BuscarEvento?.Invoke(this, EventArgs.Empty);
             };
         }
 
