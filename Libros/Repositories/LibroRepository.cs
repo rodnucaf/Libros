@@ -31,7 +31,7 @@ namespace Libros.Repositories
             {
                 conexion.Open();
                 comando.Connection = conexion;
-                comando.CommandText = "Insert into Libros values(@Titulo, @Autor, @Genero)";
+                comando.CommandText = "Insert into Libro values(@Titulo, @Autor, @Genero)";
                 comando.Parameters.Add("@Titulo", SqlDbType.NVarChar).Value = libro.Titulo;
                 comando.Parameters.Add("@Autor", SqlDbType.NVarChar).Value = libro.Autor;
                 comando.Parameters.Add("@Genero", SqlDbType.NVarChar).Value = libro.Genero;
@@ -48,15 +48,27 @@ namespace Libros.Repositories
                 conexion.Open();
                 comando.Connection = conexion;
                 comando.CommandText = "delete from Libros where Libro_Id=@id)";
-                comando.Parameters.Add("@id", SqlDbType.Int).Value = id;
-                
+                comando.Parameters.Add("@id", SqlDbType.Int).Value = id;  
                 comando.ExecuteNonQuery();
             }
         }
 
         public void Edit(Libro libro)
         {
-            throw new NotImplementedException();
+            var listaLibros = new List<Libro>();
+            using (var conexion = new SqlConnection(connectionString))
+            using (var comando = new SqlCommand())
+            {
+                conexion.Open();
+                comando.Connection = conexion;
+                comando.CommandText = "update Libro set Titulo=@titulo, Autor=@autor, Genero=@genero where Libro_Id=@id";
+                comando.Parameters.Add("@titulo", SqlDbType.NVarChar).Value = libro.Titulo;
+                comando.Parameters.Add("@autor", SqlDbType.NVarChar).Value = libro.Autor;
+                comando.Parameters.Add("@genero", SqlDbType.NVarChar).Value = libro.Genero;
+                comando.Parameters.Add("id", SqlDbType.Int).Value = libro.Id;
+
+                comando.ExecuteNonQuery();
+            }
         }
 
         public IEnumerable<Libro> ObtenerPorValor(string valor)
