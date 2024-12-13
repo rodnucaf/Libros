@@ -27,10 +27,11 @@ namespace Libros.View
 
         private void AssociateAndRaiseViewEvents()
         {
-            btnBuscar.Click += delegate { EventBuscar?.Invoke(this, EventArgs.Empty);};
+            //Buscar
+            btnBuscar.Click += delegate { BuscarEvento?.Invoke(this, EventArgs.Empty);};
             txtBuscar.KeyDown += (s, e) =>
             {
-                if (e.KeyCode == Keys.Enter) { EventBuscar?.Invoke(this, EventArgs.Empty); }
+                if (e.KeyCode == Keys.Enter) { BuscarEvento?.Invoke(this, EventArgs.Empty); }
             };
 
             txtBuscar.TextChanged += (s, e) =>
@@ -38,6 +39,17 @@ namespace Libros.View
                 
                 BuscarEvento?.Invoke(this, EventArgs.Empty);
             };
+
+            //Agregar
+            btnAgregar.Click += delegate { Agregarevento?.Invoke(this, EventArgs.Empty); };
+            //Modificar
+            btnModificar.Click += delegate { EditarEvento?.Invoke(this, EventArgs.Empty); };
+            //GuardarCambios
+            btnGuardar.Click += delegate { GuardarEvento?.Invoke(this, EventArgs.Empty); };
+            //Eliminar
+            btnEliminar.Click += delegate { BorrarEvento?.Invoke(this, EventArgs.Empty); };
+            //Cancelar
+            btnCancelar.Click += delegate { CancelarEvento?.Invoke(this, EventArgs.Empty); };
         }
 
         //Propiedades
@@ -89,7 +101,7 @@ namespace Libros.View
         }
 
         //Eventos
-        public event EventHandler EventBuscar;
+        //public event EventHandler EventBuscar;
         public event EventHandler EventAgregar;
         public event EventHandler EventEditar;
         public event EventHandler EventBorrar;
