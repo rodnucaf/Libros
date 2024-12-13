@@ -41,15 +41,49 @@ namespace Libros.View
             };
 
             //Agregar
-            btnAgregar.Click += delegate { Agregarevento?.Invoke(this, EventArgs.Empty); };
+            btnAgregar.Click += delegate
+            {
+                Agregarevento?.Invoke(this, EventArgs.Empty);
+                tabControl.TabPages.Remove(tpListado);
+                tabControl.TabPages.Add(tpDetalle);
+                tpDetalle.Text = "Agregar Libro";
+            };
+
             //Modificar
-            btnModificar.Click += delegate { EditarEvento?.Invoke(this, EventArgs.Empty); };
+            btnModificar.Click += delegate
+            {
+                EditarEvento?.Invoke(this, EventArgs.Empty);
+                tabControl.TabPages.Remove(tpListado);
+                tabControl.TabPages.Add(tpDetalle);
+                tpDetalle.Text = "Editar Libro";
+            };
             //GuardarCambios
-            btnGuardar.Click += delegate { GuardarEvento?.Invoke(this, EventArgs.Empty); };
+            btnGuardar.Click += delegate
+            {
+                GuardarEvento?.Invoke(this, EventArgs.Empty);
+                if (esCorrecto)
+                {
+                    tabControl.TabPages.Remove(tpDetalle);
+                    tabControl.TabPages.Add(tpListado);
+                }
+                MessageBox.Show(mensaje);
+            };
             //Eliminar
-            btnEliminar.Click += delegate { BorrarEvento?.Invoke(this, EventArgs.Empty); };
+            btnEliminar.Click += delegate
+            {
+                BorrarEvento?.Invoke(this, EventArgs.Empty);
+                tabControl.TabPages.Remove(tpDetalle);
+                tabControl.TabPages.Add(tpListado);
+            };
             //Cancelar
-            btnCancelar.Click += delegate { CancelarEvento?.Invoke(this, EventArgs.Empty); };
+            btnCancelar.Click += delegate
+            {   
+               var resultado = MessageBox.Show("¿Está seguro de eliminar el registro?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (resultado == DialogResult.Yes)
+                {
+                    CancelarEvento?.Invoke(this, EventArgs.Empty);
+                    MessageBox.Show(mensaje);                                }
+                };
         }
 
         //Propiedades
