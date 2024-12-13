@@ -71,19 +71,19 @@ namespace Libros.View
             //Eliminar
             btnEliminar.Click += delegate
             {
-                BorrarEvento?.Invoke(this, EventArgs.Empty);
-                tabControl.TabPages.Remove(tpDetalle);
-                tabControl.TabPages.Add(tpListado);
+                
+                var resultado =  MessageBox.Show("¿Está seguro de eliminar el registro?","", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (resultado == DialogResult.Yes) { BorrarEvento?.Invoke(this, EventArgs.Empty); MessageBox.Show(mensaje); }
+
+
             };
             //Cancelar
             btnCancelar.Click += delegate
-            {   
-               var resultado = MessageBox.Show("¿Está seguro de eliminar el registro?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (resultado == DialogResult.Yes)
-                {
-                    CancelarEvento?.Invoke(this, EventArgs.Empty);
-                    MessageBox.Show(mensaje);                                }
-                };
+            {
+                CancelarEvento?.Invoke(this, EventArgs.Empty);
+                tabControl.TabPages.Remove(tpDetalle);
+                tabControl.TabPages.Add(tpListado);
+            };
         }
 
         //Propiedades
