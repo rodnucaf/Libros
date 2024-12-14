@@ -8,5 +8,11 @@ namespace Libros.View
 {
     public interface IMainView
     {
+        event EventHandler ShowLibroView;
+        
+
+
+
+
     }
 }
