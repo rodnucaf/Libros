@@ -23,8 +23,9 @@ namespace Libros.Presenter.Common
                 foreach (var item in resultados)
                 {
                     mensajeError+= "- " + item.ErrorMessage + "\n";
-                    throw new Exception(mensajeError);
+                    
                 }
+                throw new Exception(mensajeError);
             }
         }
 
