@@ -120,7 +120,7 @@ namespace Libros.Presenter
                 var libro = (Libro)libroBindingSource.Current;
                 repository.Delete(libro.Id);
                 view.IsCorrecto = true;
-                view.Mensaje = "Registro eliminaro correctamente.";
+                view.Mensaje = "Registro eliminado correctamente.";
                 CargarListaLibros();
             }
             catch (Exception ex)
