@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Libros.Repositories
 {
-    public class BaseRepository
+    public abstract class BaseRepository
     {
-
+       protected string connectionString;
 
     }
 }

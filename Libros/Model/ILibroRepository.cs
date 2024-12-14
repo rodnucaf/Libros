@@ -13,7 +13,7 @@ namespace Libros.Model
         void Delete(int id);
 
         IEnumerable<Libro> ObtenerTodo();
-        IEnumerable<Libro> ObtenerPorValor();
+        IEnumerable<Libro> ObtenerPorValor(string valor);
 
 
     }

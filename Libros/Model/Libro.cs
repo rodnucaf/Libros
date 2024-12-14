@@ -23,7 +23,7 @@ namespace Libros.Model
         [DisplayName("Título")]
         [Required(ErrorMessage = "Se requiere el título.")]
         [StringLength(3, MinimumLength =50, ErrorMessage = "El título debe tener entre tres y cincuenta caracteres.")]
-        public string Titutlo { get { return titulo; } set { titulo = value; } }
+        public string Titulo { get { return titulo; } set { titulo = value; } }
 
         [DisplayName("Autor")]
         [Required(ErrorMessage = "Se requiere el autor.")]

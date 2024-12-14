@@ -7,6 +7,7 @@ using Libros.View;
 using Libros.Repositories;
 using Libros.Model;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 
 namespace Libros.Presenter
@@ -26,7 +27,7 @@ namespace Libros.Presenter
 
         private void ShowLibrosView(object sender, EventArgs e)
         {
-            ILibroView view = LibroView.ObtenerInstancia();
+            ILibroView view = LibroView.ObtenerInstancia((Form)mainView);
             ILibroRepository libroRepository = new LibroRepository(sqlConnectionString);
             new LibroPresenter(view, libroRepository);
         }

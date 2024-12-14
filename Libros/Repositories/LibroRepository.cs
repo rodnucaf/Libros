@@ -47,7 +47,7 @@ namespace Libros.Repositories
             {
                 conexion.Open();
                 comando.Connection = conexion;
-                comando.CommandText = "delete from Libro where Libro_Id=@id)";
+                comando.CommandText = "delete from Libro where Libro_Id=@id";
                 comando.Parameters.Add("@id", SqlDbType.Int).Value = id;  
                 comando.ExecuteNonQuery();
             }
@@ -65,7 +65,7 @@ namespace Libros.Repositories
                 comando.Parameters.Add("@titulo", SqlDbType.NVarChar).Value = libro.Titulo;
                 comando.Parameters.Add("@autor", SqlDbType.NVarChar).Value = libro.Autor;
                 comando.Parameters.Add("@genero", SqlDbType.NVarChar).Value = libro.Genero;
-                comando.Parameters.Add("id", SqlDbType.Int).Value = libro.Id;
+                comando.Parameters.Add("@id", SqlDbType.Int).Value = libro.Id;
 
                 comando.ExecuteNonQuery();
             }

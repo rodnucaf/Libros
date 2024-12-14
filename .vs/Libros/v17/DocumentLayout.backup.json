@@ -3,31 +3,347 @@
   "WorkspaceRootPath": "C:\\Users\\Facu\\source\\repos\\Libros\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|c:\\users\\facu\\source\\repos\\libros\\libros\\model\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\presenter\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\presenter\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\view\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\view\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|c:\\users\\facu\\source\\repos\\libros\\libros\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\view\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\view\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\view\\libroview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\view\\libroview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\model\\ilibrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\model\\ilibrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\repositories\\librorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\repositories\\librorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\view\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\view\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\presenter\\libropresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\presenter\\libropresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\presenter\\common\\validacionesmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\presenter\\common\\validacionesmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\model\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\model\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\view\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\view\\libroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\view\\ilibroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\view\\ilibroview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\view\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\view\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Libros||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|C:\\Users\\Facu\\source\\repos\\Libros\\libros\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{91955328-3456-4E5E-935A-D2A650751A58}|Libros\\Libros.csproj|solutionrelative:libros\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 165,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Program.cs",
+              "RelativeDocumentMoniker": "Libros\\Program.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Program.cs",
+              "RelativeToolTip": "Libros\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T23:16:04.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LibroPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Presenter\\LibroPresenter.cs",
+              "RelativeDocumentMoniker": "Libros\\Presenter\\LibroPresenter.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Presenter\\LibroPresenter.cs",
+              "RelativeToolTip": "Libros\\Presenter\\LibroPresenter.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T19:57:26.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ValidacionesModelo.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Presenter\\Common\\ValidacionesModelo.cs",
+              "RelativeDocumentMoniker": "Libros\\Presenter\\Common\\ValidacionesModelo.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Presenter\\Common\\ValidacionesModelo.cs",
+              "RelativeToolTip": "Libros\\Presenter\\Common\\ValidacionesModelo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:19:01.001Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Presenter\\MainPresenter.cs",
+              "RelativeDocumentMoniker": "Libros\\Presenter\\MainPresenter.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Presenter\\MainPresenter.cs",
+              "RelativeToolTip": "Libros\\Presenter\\MainPresenter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAWwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T02:24:08.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainView.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\MainView.cs",
+              "RelativeDocumentMoniker": "Libros\\View\\MainView.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\MainView.cs",
+              "RelativeToolTip": "Libros\\View\\MainView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T02:14:11.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainView.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\MainView.cs",
+              "RelativeDocumentMoniker": "Libros\\View\\MainView.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\MainView.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Libros\\View\\MainView.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T02:14:09.72Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IMainView.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\IMainView.cs",
+              "RelativeDocumentMoniker": "Libros\\View\\IMainView.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\IMainView.cs",
+              "RelativeToolTip": "Libros\\View\\IMainView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T02:05:19.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Properties\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "Libros\\Properties\\Settings.Designer.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Properties\\Settings.Designer.cs",
+              "RelativeToolTip": "Libros\\Properties\\Settings.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T23:56:12.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Libros\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Libros\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T23:24:48.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Libros",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Libros.csproj",
+              "RelativeDocumentMoniker": "Libros\\Libros.csproj",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Libros.csproj",
+              "RelativeToolTip": "Libros\\Libros.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-10T23:24:49.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\App.config",
+              "RelativeDocumentMoniker": "Libros\\App.config",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\App.config",
+              "RelativeToolTip": "Libros\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-10T23:24:29.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "Libros\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Properties\\Settings.settings",
+              "RelativeToolTip": "Libros\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-12-10T23:22:54.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LibroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Repositories\\LibroRepository.cs",
+              "RelativeDocumentMoniker": "Libros\\Repositories\\LibroRepository.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Repositories\\LibroRepository.cs",
+              "RelativeToolTip": "Libros\\Repositories\\LibroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T22:34:00.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Libros\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Libros\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T22:29:16.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LibroView.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\LibroView.Designer.cs",
+              "RelativeDocumentMoniker": "Libros\\View\\LibroView.Designer.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\LibroView.Designer.cs",
+              "RelativeToolTip": "Libros\\View\\LibroView.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T19:52:30.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LibroView.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\LibroView.cs",
+              "RelativeDocumentMoniker": "Libros\\View\\LibroView.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\LibroView.cs",
+              "RelativeToolTip": "Libros\\View\\LibroView.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAArwEsAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T19:56:45.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LibroView.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\LibroView.cs",
+              "RelativeDocumentMoniker": "Libros\\View\\LibroView.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\LibroView.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Libros\\View\\LibroView.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T19:43:56.298Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ILibroView.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\ILibroView.cs",
+              "RelativeDocumentMoniker": "Libros\\View\\ILibroView.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\View\\ILibroView.cs",
+              "RelativeToolTip": "Libros\\View\\ILibroView.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T19:28:32.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ILibroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Model\\ILibroRepository.cs",
+              "RelativeDocumentMoniker": "Libros\\Model\\ILibroRepository.cs",
+              "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Model\\ILibroRepository.cs",
+              "RelativeToolTip": "Libros\\Model\\ILibroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T19:22:41.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Model\\Libro.cs",
               "RelativeDocumentMoniker": "Libros\\Model\\Libro.cs",
               "ToolTip": "C:\\Users\\Facu\\source\\repos\\Libros\\Libros\\Model\\Libro.cs",
               "RelativeToolTip": "Libros\\Model\\Libro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T18:38:27.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T18:38:27.534Z"
             }
           ]
         }
